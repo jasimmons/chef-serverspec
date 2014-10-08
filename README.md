@@ -67,6 +67,8 @@ end
 ```
 NOTE: `example_spec.rb` is the name of the file on the machine, whereas `my_example_spec.rb` is the file in the `serverspec/files/...` directory.
 
+### serverspec::run_tests
+
 In order to run Serverspec tests, include the `run_tests` recipe:
 
 ```
@@ -77,12 +79,14 @@ In order to run Serverspec tests, include the `run_tests` recipe:
 }
 ```
 
-If you want to remove all traces of serverspec from the machine, include the `clean_image` recipe:
+### serverspec::cleanup
+
+If you want to remove all traces of serverspec from the machine, include the `cleanup` recipe:
 
 ```
 {
   "run_list": [
-    "recipe[serverspec::clean_image]"
+    "recipe[serverspec::cleanup]"
     ]
 }
 ```
