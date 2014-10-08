@@ -1,7 +1,7 @@
 # Cookbook serverspec
 
 This cookbook is responsible for installing necessary gems, files, and tests in order to
-use Serverspec. It only supports (as of 0.2.0) running Serverspec locally.
+use Serverspec. It only supports (as of 0.1.0) running Serverspec locally.
 
 ## Supported Platforms
 
@@ -65,7 +65,7 @@ serverspec_test 'example_spec.rb' do
 source 'my_example_spec.rb'
 end
 ```
-NOTE: `example_spec.rb` is the name of the file on the machine, whereas `my_example_spec.rb` is the file in the `serverspec/files/...` directory.
+NOTE: `example_spec.rb` is the name of the file on the machine, whereas `my_example_spec.rb` is the file in the `serverspec/files/default/...` directory.
 
 ### serverspec::run_tests
 
