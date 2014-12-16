@@ -5,7 +5,7 @@ use Serverspec. It only supports (as of 0.1.0) running Serverspec locally.
 
 ## Supported Platforms
 
-This cookbook is supported on both Windows and Ubuntu.
+Version 0.2.0 of this cookbook has been tested on Ubuntu 12.04 and Ubuntu 14.04.
 
 ## Attributes
 
