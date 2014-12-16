@@ -1,4 +1,4 @@
 require 'serverspec'
 
-include SpecInfra::Helper::Cmd
-include SpecInfra::Helper::Windows
+set :backend, :cmd
+set :os, family: 'windows'
