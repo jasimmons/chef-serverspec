@@ -5,7 +5,7 @@ use Serverspec. It only supports (as of 0.1.0) running Serverspec locally.
 
 ## Supported Platforms
 
-This cookbook is supported on both Windows and Ubuntu.
+Version 0.2.0 of this cookbook has been tested on Ubuntu 12.04 and Ubuntu 14.04.
 
 ## Attributes
 
@@ -38,7 +38,7 @@ This cookbook is supported on both Windows and Ubuntu.
 <td><tt>['serverspec']['gem_version']</tt></td>
 <td>String</td>
 <td>Version of the serverspec gem to install</td>
-<td><tt>1.16.0</tt></td>
+<td><tt>2.7.1</tt></td>
 </tr>
 </table>
 
@@ -89,6 +89,16 @@ If you want to remove all traces of serverspec from the machine, include the `cl
     "recipe[serverspec::cleanup]"
     ]
 }
+```
+
+## Testing with Test Kitchen
+
+A basic .kitchen.yml file was added for running the serverspec cookbook in Vagrant to test.
+No kitchen tests were added, because tests are already handled by the default suite.
+
+To run Test Kitchen:
+```
+kitchen test
 ```
 
 ## Author(s)

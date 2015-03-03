@@ -1,8 +1,8 @@
 name             'serverspec'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
-license          'All rights reserved'
+maintainer       'Jason Simmons'
+maintainer_email 'jasimmons90@gmail.com'
+license          'Apache 2.0'
 description      'Installs/Configures serverspec'
 long_description 'Installs/Configures serverspec'
-version          '0.1.0'
+version          '0.2.0'
 
